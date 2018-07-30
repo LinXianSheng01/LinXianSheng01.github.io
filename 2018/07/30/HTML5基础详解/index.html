@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="林建鹏的博客">
 <meta property="og:description" content="1.声明：&amp;lt;!DOCTYPE&amp;gt; HTML 也有多个不同的版本，只有完全明白页面中使用的确切HTML版本才能完全正确的显示出HTML页面。这就是&amp;lt;!DOCTYPE&amp;gt;的用处 HTML各版本之间的声明方式不同     HTML5：         &amp;lt;!DOCTYPE&amp;gt;     HTML4.01：         &amp;lt;!DOCTYPE HTML PUBLIC &amp;qu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-30T02:46:41.474Z">
+<meta property="og:updated_time" content="2018-07-30T03:25:10.435Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML5基础详解">
 <meta name="twitter:description" content="1.声明：&amp;lt;!DOCTYPE&amp;gt; HTML 也有多个不同的版本，只有完全明白页面中使用的确切HTML版本才能完全正确的显示出HTML页面。这就是&amp;lt;!DOCTYPE&amp;gt;的用处 HTML各版本之间的声明方式不同     HTML5：         &amp;lt;!DOCTYPE&amp;gt;     HTML4.01：         &amp;lt;!DOCTYPE HTML PUBLIC &amp;qu">
@@ -394,7 +394,9 @@ body:
 
         &lt;/html&gt;
 </code></pre><p>3.HTML标题</p>
-<pre><code>h1&gt; - &lt;h6&gt; 标签可定义标题。&lt;h1&gt; 定义最大的标题。&lt;h6&gt; 定义最小的标题。由于 h 元素拥有确切的语义，因此请您慎重地选择恰当的标签层级来构建文档的结构。因此，请不要利用标题标签来改变同一行中的字体大小。相反，我们应当使用层叠样式表定义来达到漂亮的显示效果。
+<pre><code>h1&gt; - &lt;h6&gt; 标签可定义标题。&lt;h1&gt; 定义最大的标题。&lt;h6&gt; 定义最小的标题。
+由于 h 元素拥有确切的语义，因此请您慎重地选择恰当的标签层级来构建文档的结构。
+因此，请不要利用标题标签来改变同一行中的字体大小。相反，我们应当使用层叠样式表定义来达到漂亮的显示效果。
 示例：
     &lt;h1&gt;这是标题 1&lt;/h1&gt;
     &lt;h2&gt;这是标题 2&lt;/h2&gt;
@@ -413,18 +415,24 @@ body:
     &lt;a href=&quot;http://www.w3school.com.cn&quot;&gt;W3School&lt;/a&gt;
 </code></pre><p>6.HTML图像：</p>
 <pre><code>img 元素向网页中嵌入一幅图像
-    *请注意，从技术上讲，&lt;img&gt; 标签并不会在网页中插入图像，而是从网页上链接图像。&lt;img&gt; 标签创建的是被引用图像的占位空间。
+    *请注意，从技术上讲，&lt;img&gt; 标签并不会在网页中插入图像，而是从网页上链接图像。
+        &lt;img&gt; 标签创建的是被引用图像的占位空间。
     &lt;img&gt; 标签有两个必需的属性：src 属性 和 alt 属性。
 src属性：
-    &lt;img&gt; 标签的 src 属性是必需的。它的值是图像文件的 URL，也就是引用该图像的文件的的绝对路径或相对路径。
-    提示：为了整理文档的存储，创作者通常会把图像文件存放在一个单独的文件夹中，而且通常会将这些目录命名为 &quot;pics&quot; 或者 &quot;images&quot; 之类的名称。可以吧imges缩写为i这样做的好处是可以最大程度的简化路径
+    &lt;img&gt; 标签的 src 属性是必需的。它的值是图像文件的 URL，
+        也就是引用该图像的文件的的绝对路径或相对路径。
+    提示：为了整理文档的存储，创作者通常会把图像文件存放在一个单独的文件夹中，
+        而且通常会将这些目录命名为 &quot;pics&quot; 或者 &quot;images&quot; 之类的名称。
+        可以吧imges缩写为i这样做的好处是可以最大程度的简化路径
     语法：
         &lt;img src=&quot;/i/eg_chinarose.jpg&quot; /&gt;
 alt属性：
     alt 属性是一个必需的属性，它规定在图像无法显示时的替代文本。
-    如果用户因为各种原因无法查看图形，alt属性可以为图形提供替代的消息
-    &lt;img&gt; 标签的 alt 属性指定了替代文本，用于在图像无法显示或者用户禁用图像显示时，代替图像显示在浏览器中的内容
-    我们强烈推荐您在文档的每个图像中都使用这个属性。这样即使图像无法显示，用户还是可以看到关于丢失了什么东西的一些信息。而且对于残疾人来说，alt 属性通常是他们了解图像内容的唯一方式
+        如果用户因为各种原因无法查看图形，alt属性可以为图形提供替代的消息
+    &lt;img&gt; 标签的 alt 属性指定了替代文本，用于在图像无法显示或者用户禁用图像显示时，
+        代替图像显示在浏览器中的内容，强烈推荐您在文档的每个图像中都使用这个属性。
+        这样即使图像无法显示，用户还是可以看到关于丢失了什么东西的一些信息。
+        而且对于残疾人来说，alt 属性通常是他们了解图像内容的唯一方式
 示例：
     &lt;img src=&quot;/i/eg_tulip.jpg&quot;  alt=&quot;上海鲜花港 - 郁金香&quot; /&gt;
 </code></pre>
@@ -460,6 +468,10 @@ alt属性：
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/30/HTML5元素简介及使用方法“/" rel="prev" title="HTML5元素简介及使用方法“">
+                HTML5元素简介及使用方法“ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -527,7 +539,7 @@ alt属性：
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
